@@ -1,0 +1,84 @@
+{
+  "name": "Tech Crunch",
+  "home-page": "https://techcrunch.com",
+  "icon-url": "{home-page}/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32",
+  "category": [
+    "Tech",
+    "News"
+  ],
+  "categories": {
+    "extractor": "css",
+    "locator": [
+      ".wp-block-techcrunch-mega-menu-link a"
+    ],
+    "include": {},
+    "exclude": ["Events", "Startup Battlefield", "StrictlyVC", "Newsletters", "Podcasts", "Videos", "Partner Content", "TechCrunch Brand Studio", "Crunchboard", "Contact Us"]
+  },
+  "category-url": "{home-page}/{category}/page/{page}/",
+  "supports-custom-category": true,
+  "category-articles": {
+    "extractor": "css",
+    "locators": {
+      "container": ".loop-card--post-type-post",
+      "title": "h3",
+      "excerpt": "",
+      "author": ".loop-card__author",
+      "thumbnail": "img",
+      "url": "h3 a",
+      "time": "time",
+      "tags": [
+        ".loop-card__cat"
+      ],
+      "category": "",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "ISO 8601",
+    "modifications": []
+  },
+  "search-url": "https://techcrunch.com/page/{page}/?s={query}",
+  "search-articles": {
+    "extractor": "",
+    "locators": {
+      "container": "",
+      "title": "",
+      "excerpt": "",
+      "author": "",
+      "thumbnail": "",
+      "url": "",
+      "time": "",
+      "tags": [],
+      "category": "",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "",
+    "modifications": []
+  },
+  "article": {
+    "extractor": "css",
+    "locators": {
+      "container": "article",
+      "title": "",
+      "excerpt": "",
+      "author": "",
+      "thumbnail": "",
+      "url": "",
+      "time": "",
+      "tags": [
+        ".cz-news-tags-wrap a"
+      ],
+      "category": "",
+      "content": [
+        ".entry-content"
+      ]
+    },
+    "timezone": "",
+    "date-format": "",
+    "modifications": []
+  },
+  "ads": [
+    ".wp-block-techcrunch-inline-cta"
+  ],
+  "headers": {}
+}

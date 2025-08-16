@@ -1,0 +1,112 @@
+{
+  "name": "Bleeping Computer",
+  "home-page": "https://www.bleepingcomputer.com",
+  "icon-url": "https://www.bleepingcomputer.com/favicon.ico",
+  "category": [
+    "Security",
+    "Tech",
+    "News"
+  ],
+  "categories": {
+    "extractor": "",
+    "locator": [],
+    "include": {
+      "All news": "news",
+      "Cybersecurity": "news/security",
+      "Healthcare": "news/healthcare",
+      "Microsoft": "news/microsoft",
+      "Mobile": "news/mobile",
+      "Software": "news/software",
+      "Technology": "news/technology"
+    },
+    "exclude": []
+  },
+  "category-url": "https://www.bleepingcomputer.com/{category}/page/{page}/",
+  "supports-custom-category": true,
+  "category-articles": {
+    "extractor": "css",
+    "locators": {
+      "container": "#bc-home-news-main-wrap>li",
+      "title": "h4 a",
+      "excerpt": "p",
+      "author": "li.bc_news_author",
+      "thumbnail": ".bc_latest_news_img img",
+      "url": "h4 a",
+      "time": "div.bc_latest_news_text ul li.bc_news_date",
+      "tags": [
+        ".bc_news_cat a"
+      ],
+      "category": "",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "MMM dd, yyyy",
+    "modifications": [
+      {
+        "value": "url",
+        "action": "strip",
+        "param": [
+          "/page/1/"
+        ]
+      },
+      {
+        "value": "author",
+        "action": "skip",
+        "param": [
+          "BleepingComputer Deals",
+          "Wiz Sponsorship"
+        ]
+      },
+      {
+        "value": "thumbnail",
+        "action": "strip",
+        "param": [
+          "thumb/170x170_"
+        ]
+      }
+    ]
+  },
+  "search-url": "",
+  "search-articles": {
+    "extractor": "",
+    "locators": {
+      "container": "",
+      "title": "",
+      "excerpt": "",
+      "author": "",
+      "thumbnail": "",
+      "url": "",
+      "time": "",
+      "tags": [],
+      "category": "",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "",
+    "modifications": []
+  },
+  "article": {
+    "extractor": "css",
+    "locators": {
+      "container": "article",
+      "title": "",
+      "excerpt": "",
+      "author": "",
+      "thumbnail": "",
+      "url": "",
+      "time": "",
+      "tags": [
+        ".cz-news-tags-wrap a"
+      ],
+      "category": "",
+      "content": [
+        ".article_section"
+      ]
+    },
+    "timezone": "",
+    "date-format": "",
+    "modifications": []
+  },
+  "ads": [],
+  "headers": {}
+}

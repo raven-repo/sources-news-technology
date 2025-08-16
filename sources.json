@@ -1,0 +1,19 @@
+{
+  "name": "Tech news",
+  "description": "",
+  "changelog": "CHANGELOG.md",
+  "feeds": [
+    {
+      "name": "BleepingComputer",
+      "file": "feeds/tech/bleeping_computer.json",
+      "other-versions": []
+    },
+    {
+      "name": "TechCrunch",
+      "file": "feeds/tech/tech_crunch.json",
+      "other-versions": []
+    }
+  ],
+  "watches": []
+}
+
