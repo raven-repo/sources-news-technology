@@ -1,6 +1,6 @@
 {
   "name": "Tech news",
-  "feeds": [
+  "publishers": [
     {
       "name": "BleepingComputer",
       "file": "feeds/tech/bleeping_computer.json",
