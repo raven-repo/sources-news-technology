@@ -3,12 +3,12 @@
   "publishers": [
     {
       "name": "BleepingComputer",
-      "file": "feeds/tech/bleeping_computer.json",
+      "file": "publishers/tech/bleeping_computer.json",
       "other-versions": []
     },
     {
       "name": "TechCrunch",
-      "file": "feeds/tech/tech_crunch.json",
+      "file": "publishers/tech/tech_crunch.json",
       "other-versions": []
     }
   ],
