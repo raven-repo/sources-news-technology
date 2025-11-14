@@ -1,7 +1,5 @@
 {
   "name": "Tech news",
-  "description": "",
-  "changelog": "CHANGELOG.md",
   "feeds": [
     {
       "name": "BleepingComputer",
