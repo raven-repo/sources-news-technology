@@ -1,7 +1,7 @@
 {
   "name": "Tech Crunch",
   "home-page": "https://techcrunch.com",
-  "icon-url": "{home-page}/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32",
+  "icon-url": "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32",
   "category": [
     "Tech",
     "News"
