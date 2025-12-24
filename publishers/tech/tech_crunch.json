@@ -58,7 +58,7 @@
   "article": {
     "extractor": "css",
     "locators": {
-      "container": "article",
+      "container": "main",
       "title": "",
       "excerpt": "",
       "author": "",
